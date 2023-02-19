@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="img/favicon-16x16.png">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/functionality.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/gallery.css" />
+		<link rel="stylesheet" href="css/news.css" />
+		<script src="./js/index.js" defer></script>
+		<script src="/js/gallery.js" defer></script>
+		<!-- Linked fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/c485bc7976.js"
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="path/to/font-awesome/css/font-awesome.min.css"
+		/>
+		<script src="/js/to-top-button.js" defer></script>
+		<title>POW! - Power Up with POW!</title>
+	</head>
+	<body>
+		<!------------------ BIGGER SCREENS ----------------->
+		<header class="bigger-header">
+			<nav>
+				<div class="nav-container">
+					<div class="nav-links">
+						<a class="nav-link" href="#about">wHAT IS POW!?</a>
+						<a class="nav-link" href="#products">PRODUCTS</a>
+						<div class="logo-container">
+							<div class="logo">
+								<a href="index.html">
+									<img
+									class="logo-image"
+									src="./img/pow-logo.png"
+									alt="logo image"
+								/>
+							</a>
+							</div>
+						</div>
+						<a class="nav-link" href="#functionality">OUR FUNCTIONALITY</a>
+						<a class="nav-link" href="#newsletter">NEWSLETTER</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<!--------------------- MOBILE SCREENS ---------------->
+		<header class="mobile-header">
+			<nav class="mobile-nav">
+				<div class="mobile-logo-container">
+					<img class="mobile-logo" src="./img/pow-logo.png" alt="" />
+				</div>
+				<div class="mobile-nav-links">
+					<a class="mobile-nav-link" href="#about">WHAT IS POW!?</a>
+					<a class="mobile-nav-link" href="#products">PRODUCTS</a>
+					<a class="mobile-nav-link" href="#functionality">OUR FUNCTIONALITY</a>
+					<a class="mobile-nav-link" href="#newsletter">NEWSLETTER</a>
+				</div>
+				<button class="hamburger">
+					<i class="menu-icon fa-solid fa-bars"></i>
+					<i class="close-icon fa-solid fa-x"></i>
+				</button>
+			</nav>
+		</header>
+
+		<!--------------------- MAIN STARTS -------------->
+		<main>
+			<!--------------------- HERO --------------------->
+			<section id="top" class="hero-index">
+				<div class="hero-container">
+					<button class="hero-button" type="button">
+						<a href="#products">Check Us Out!</a>
+					</button>
+				</div>
+			</section>
+			<section id="about" class="about-index">
+				<h1 class="about">WHAT IS POW!?</h1>
+				<p>
+					<b>Need extra energy during the day? </b><br />
+					<br />
+					Give us the opportunity to provide you with a new energy powder that
+					contains only natural ingredients.<br />
+					<br />
+
+					POW! - is <b> 100% vegan</b> , contains no added sugar, <br />
+					and is packed with vitamins to keep you alert and focused all day.
+				</p>
+			</section>
+			<!----------------------- SLIDESHOW ----------------------->
+			<section id="products" class="gallery">
+				<div class="gallery-container">
+					<div class="mySlides fade">
+						<img src="/img/bubble-yum.png" style="width: 100%" />
+					</div>
+					<div class="mySlides fade">
+						<img src="/img/soure-apple.png" style="width: 100%" />
+					</div>
+					<div class="mySlides fade">
+						<img src="/img/tropical-punch.png" style="width: 100%" />
+					</div>
+					<div class="mySlides fade">
+						<img src="/img/wild-blueberry.png" style="width: 100%" />
+					</div>
+				</div>
+			</section>
+
+			<!----------------------- FUNCTIONALITY AND NEWSLETTER HERE----------------------->
+			<section id="functionality" class="functionality">
+				<div class="functionality-container">
+					<h1>Our functionality</h1>
+					<p>
+						These non-alcoholic beverages are designed to provide the consumer
+						with a rapid energy boost. <br />
+						<br />
+						They have far less calories than commercial beverages and provide an
+						energy boost due to the high caffeine level. 
+					</p>
+					<br />
+					<p>
+						Our product comes in a powder form that you can easily combine with
+						water, wherever you are and whenever you like.
+
+						<br />
+						<br />
+						We use 100% recycled plastic for our packaging.
+					</p>
+				</div>
+			</section>
+			
+			<!------------------- NEWSLETTER  ---------------->
+			<section id="newsletter" class="newsletter">
+				<form id="newsForm" action="#" method="post">
+					<div class="fcontainer">
+						<h2>NEWSLETTER</h1>
+
+						<p class="fp">Subscribe  to receive updates on our newest goods, sales and more!</p>
+
+						<input
+							class="finp"
+							type="email"
+							class="mform"
+							placeholder="Your email"
+							required
+						/>
+						<div class="subscribe">
+						  <input type="checkbox" id="subscribe" name="newsletter" value="newsletter" required>
+							<label for="newsletter"> Subscribe to our newsletter!</label>
+						</div>
+						<p class="p-subs"> <i>You may unsubscribe at any moment</i></p>
+							<div class="btn-container">
+							 	<input class="fbtn" type="submit" value="Subscribe!" />
+						  </div>
+							<br>
+							<div id="status"></div>
+					</div>
+				</form>
+			</section>
+		</main>
+
+		<!-- FOOTER -->
+		<footer id="footer">
+			<div class="footer-container">
+				<div class="address">
+					<a href="https://goo.gl/maps/5meZQspWqo1k9KLx6"  target="_blank">Skaldehøjvej 2, 8800 Viborg</a>
+					<p>Pow@power.dk</p>
+					<p>+45 86 67 50 55</p>
+				</div>
+				<div class="some">
+					<a href="https://www.instagram.com/"
+						><i class="fa-brands fa-instagram"></i
+					></a>
+					<a href="https://www.facebook.com/"
+						><i class="fa-brands fa-facebook"></i
+					></a>
+					<a href="https://www.tiktok.com/"
+						><i class="fa-brands fa-tiktok"></i
+					></a>
+					<a href="https://www.linkedin.com/"
+						><i class="fa-brands fa-linkedin"></i
+					></a>
+					<a href="https://www.twitter.com/"
+						><i class="fa-brands fa-twitter"></i
+					></a>
+				</div>
+
+				<div class="copyright-backtop">
+					<div class="copyright">
+						<p>© 2022 POW/Medieskolerne</p>
+						<p>Tiia Mike Shamil Dmytro</p>
+					</div>
+					<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+					<!-- <div class="back-top"><a id="button" href="#top"></a></div> -->
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,132 @@
+.newsletter {
+	margin-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+.fcontainer {
+	width: 100%;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fp {
+	text-align: center;
+}
+
+.finp {
+	margin-bottom: 10px;
+	width: 320px;
+	height: 35px;
+	padding-left: 0.5vw;
+	font-size: 15px;
+}
+
+.btn-container {
+	display: flex;
+	width: 100%;
+	padding-top: 2vh;
+	justify-content: center;
+}
+
+.fbtn {
+	border-radius: 20px;
+	background: transparent;
+	color: rgb(180, 180, 180);
+	width: 8%;
+	height: auto;
+	padding: 0.8vh 0;
+	font-weight: 500;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+.fbtn:hover {
+	background-color: #29926a;
+	color: black;
+	border: black 1px solid;
+	transform: scale(1.05);
+	transition: 0.2s ease-out;
+}
+
+.fbtn:active {
+	background-color: #0c461f;
+}
+
+form h2 {
+	font-size: 50px;
+	font-family: 'Bungee Inline', sans-serif;
+	background: -webkit-linear-gradient(#43ecd0, #247e5b, #0c461f);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+form p {
+	font-size: 20px;
+	padding: 3vh 0;
+}
+
+.subscribe {
+	padding-top: 2vh;
+}
+.p-subs {
+	font-size: 12px;
+	padding: 0.5vh 0 0 0;
+	text-align: right;
+}
+
+.alertForm {
+	border-color: red;
+}
+
+/********** Mobile ***********/
+
+@media (min-width: 370px) and (max-width: 400px) {
+	.newsletter {
+		font-size: 12px;
+		width: 100%;
+		margin-top: 10vh;
+		padding-bottom: 5vh;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	.fcontainer h2 {
+		font-size: 32px;
+	}
+
+	.fp {
+		padding: 2vh 0;
+		line-height: 1.7;
+		width: 80%;
+		font-size: 12px;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.finp {
+		width: 80%;
+	}
+
+	.fbtn {
+		width: 40%;
+	}
+
+	.btn-container {
+		padding-top: 3vh;
+		justify-content: center;
+	}
+
+	.fcontainer {
+		align-items: center;
+	}
+
+	.p-subs {
+		font-size: 10px;
+		padding: 0.5vh 0 0 0;
+		text-align: left;
+	}
+}
