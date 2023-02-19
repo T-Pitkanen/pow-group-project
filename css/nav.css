@@ -17,11 +17,14 @@ nav {
 	padding: 1vw 4vw;
 	border-bottom: 1px solid rgb(42, 41, 43);
 }
+.nav-container {
+	padding-left: 5%;
+}
 
 /***************** LOGO ******************/
 
 .logo-image {
-	width: 150px;
+	width: auto;
 	height: 80px;
 }
 
